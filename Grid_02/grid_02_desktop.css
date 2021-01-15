@@ -1,0 +1,70 @@
+html, body {
+    font-size: 3.5vmax;
+    text-transform: uppercase;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 100vh;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 5fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header menu menu menu"
+        "hero hero hero hero"
+        "main main . image"
+        "main main . extra"
+        "banner banner banner banner";
+    text-align: center;
+    /*-- vízszintes igazítás*/
+    justify-items: stretch; 
+    /*    függőleges igazítás*/
+    align-items: stretch;
+  height: 100%;
+  width: 100%;
+}
+header {
+    background: black;
+    color: white;
+    grid-area: header;
+}
+nav {
+    background: #ef3c4f;
+    color: white;
+    grid-area: menu;
+}
+#hero {
+    background: #4c86c6;
+    color: white;
+    grid-area: hero;
+}
+
+#main {
+    background: #24344b;
+    color: white;
+    grid-area: main;
+}
+#banner {
+    background: #ffd068;
+    color: black;
+    grid-area: banner;
+}
+#extra {
+    background: #4dbd97;
+    color: black;
+    grid-area: extra;
+}
+#image {
+    background: #c1e4e6;
+    color: black;
+    grid-area: image
+}
+
+.kozepre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
